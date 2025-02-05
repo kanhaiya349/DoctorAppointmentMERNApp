@@ -145,7 +145,7 @@ function AddDoctor() {
               <input
                 type="password"
                 className="border border-gray-300 w-full px-2 py-1 my-2"
-                placeholder="Password"
+                placeholder="Password-min. 8 characters"
                 onChange={(e)=>setPassword(e.target.value)}
                 value={password}
                 required
