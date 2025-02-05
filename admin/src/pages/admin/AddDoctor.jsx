@@ -108,7 +108,7 @@ function AddDoctor() {
               <option value="General physician">General Physician</option>
               <option value="Gynecologist">Gynecologist</option>
               <option value="Dermatologist">Dermatologist</option>
-              <option value="pediatricians">Pediatricians</option>
+              <option value="Pediatricians">Pediatricians</option>
               <option value="Neurologist">Neurologist</option>
               <option value="Gastroenterologist">Gastroenterologist</option>
             </select>

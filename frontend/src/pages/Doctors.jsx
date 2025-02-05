@@ -106,17 +106,17 @@ function Doctors() {
           </p>
           <p
             onClick={() =>
-              speciality === "pediatricians"
+              speciality === "Pediatricians"
                 ? navigate("/doctors")
-                : navigate("/doctors/pediatricians")
+                : navigate("/doctors/Pediatricians")
             }
             className={`border border-gray-300 rounded-sm w-48 px-3 py-1 text-sm cursor-pointer relative mb-5 overflow-hidden group ${
-              speciality === "pediatricians"
+              speciality === "Pediatricians"
                 ? "bg-primary text-white"
                 : "bg-white"
             }`}
           >
-            {speciality !== "pediatricians" ? (
+            {speciality !== "Pediatricians" ? (
               <span className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-center group-hover:bg-primary transition-all duration-500 ease-in-out"></span>
             ) : (
               ""
