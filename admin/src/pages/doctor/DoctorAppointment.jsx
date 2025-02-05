@@ -68,12 +68,12 @@ function DoctorAppointment() {
               <div className="w-20 text-green-700 text-sm">Completed</div>
             ) : (
               <div className="flex w-20 items-center">
-                <img
+                {items.payment?<div className="text-green-700 text-sm">Paid</div>:<img
                   className="w-10 cursor-pointer"
                   onClick={() => cancelAppointment(items._id)}
                   src={assets.cancel_icon}
                   alt=""
-                />
+                />}
                 <img
                   className="w-10 cursor-pointer"
                   onClick={() => completeAppointment(items._id)}
