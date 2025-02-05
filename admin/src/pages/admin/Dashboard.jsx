@@ -55,7 +55,7 @@ function Dashboard() {
                   </div>
                 </div>
                 {items.cancelled?
-                  <div className='w-14 text-[12px] items-center text-red-700 mr-2 text-right'>Cancelled</div> : items.isCompleted?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Completed</div> : <button className='w-14 flex justify-center items-center mr-2'><img className='w-9' onClick={()=>cancelAppointment(items._id)} src={assets.cancel_icon} alt="" /></button>
+                  <div className='w-14 text-[12px] items-center text-red-700 mr-2 text-right'>Cancelled</div> : items.isCompleted?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Completed</div> : items.payment?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Paid</div>:<button className='w-14 flex justify-center items-center mr-2'><img className='w-9' onClick={()=>cancelAppointment(items._id)} src={assets.cancel_icon} alt="" /></button>
               }
               </div>
             ))}

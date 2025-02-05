@@ -46,7 +46,7 @@ function Appointments() {
                 <div className='text-red-700 text-[9px] font-medium w-5 md:text-[12px] md:w-16 flex items-center justify-center max-sm:ml-3'>Cancelled</div>:
                 items.isCompleted?
                 <div className='text-green-700 text-[9px] font-medium w-5 md:text-[12px] md:w-16 flex items-center justify-center max-sm:ml-3'>Completed</div>
-                :<div onClick={()=>cancelAppointment(items._id)} className='w-16 sm:w-5 md:w-16 flex items-center justify-center max-sm:ml-3'><img className='w-10 sm:w-5 md:w-10 cursor-pointer' src={assets.cancel_icon} /></div>
+                :items.payment?<div className='text-green-700 text-[9px] font-medium w-5 md:text-[12px] md:w-16 flex items-center justify-center max-sm:ml-3'>Paid</div>:<div onClick={()=>cancelAppointment(items._id)} className='w-16 sm:w-5 md:w-16 flex items-center justify-center max-sm:ml-3'><img className='w-10 sm:w-5 md:w-10 cursor-pointer' src={assets.cancel_icon} /></div>
             }
             </div>
           ))}
