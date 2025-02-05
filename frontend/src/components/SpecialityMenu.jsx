@@ -8,7 +8,7 @@ function SpecialityMenu() {
         <p className="max-w-96 text-sm mb-10 text-center">Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free.</p>
         <div className="flex flex-wrap justify-center items-center gap-4 mb-20">
             {specialityData.map((item,index)=>(
-                <Link onClick={()=>scrollTo(0,0)} key={index} to={`/doctors/${item.speciality}`} className="hover:-translate-y-2 transition-all ease-in-out duration-500">
+                <Link onClick={()=>scrollTo(0,0)} key={index} to={item.speciality==="Pediatricians"?"doctors/pediastrians":`/doctors/${item.speciality}`} className="hover:-translate-y-2 transition-all ease-in-out duration-500">
                         <img src={item.image} alt="" className="w-24 mb-2" />
                         <p className="text-[12px] w-30 font-semibold flex justify-center">{item.speciality}</p>
                 </Link>
