@@ -24,7 +24,7 @@ function App() {
       <div className="flex items-start h-[140vh] md:h-[95vh]">
         <Sidebar />
         <p className="h-[100%] w-[1px] bg-gray-300 relative "></p>
-        <div className="bg-gray-50 w-full h-full">
+        <div className="bg-gray-50 w-full min-h-screen max-sm:ml-[50px] ml-[250px] mt-[73px]">
           <Routes>
             {/* Admin Routes */}
             <Route path="/" element={<></>} />

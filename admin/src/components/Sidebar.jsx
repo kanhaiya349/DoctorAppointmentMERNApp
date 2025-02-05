@@ -11,7 +11,7 @@ function Sidebar() {
     const {dtoken}=useContext(DoctorContext)
 
   return (
-    <div className="flex">
+    <div className="fixed top-[71px] left-0 h-full w-[250px] max-sm:w-[50px] bg-white shadow-md flex flex-col">
         {atoken&&<ul className="flex flex-col my-10 text-textColor text-sm font-semibold">
             <NavLink className={({isActive})=>`flex gap-3 items-center cursor-pointer max-sm:px-2 sm:pl-8 sm:pr-24 h-[48px] ${isActive?"bg-blue-100 border-r-4 border-primary":""}`} to={"/admin-dashboard"}>
                 <img src={assets.home_icon} alt="" />

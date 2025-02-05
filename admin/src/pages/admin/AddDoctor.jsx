@@ -86,7 +86,7 @@ function AddDoctor() {
         <input onChange={(e)=>{setDocImg(e.target.files[0])}} type="file" id="doc-img" hidden />
         <div className="flex flex-col md:flex-row mt-10 gap-6">
           <div className="flex flex-col w-full md:w-[45%]">
-            <p className="text-textColor font-semibold">Your Name</p>
+            <p className="text-textColor font-semibold">Doctor Name</p>
             <input
               type="text"
               className="border border-gray-300 px-2 py-1 w-full my-2"
@@ -172,7 +172,7 @@ function AddDoctor() {
             <input
               type="text"
               className="border border-gray-300 w-full px-2 py-1 mt-2"
-              placeholder="Address1"
+              placeholder="Line1"
               onChange={(e)=>setAddress1(e.target.value)}
               value={address1}
               required
@@ -180,7 +180,7 @@ function AddDoctor() {
             <input
               type="text"
               className="border border-gray-300 w-full px-2 py-1 my-2"
-              placeholder="Address2"
+              placeholder="Line2"
               onChange={(e)=>setAddress2(e.target.value)}
               value={address2}
               required

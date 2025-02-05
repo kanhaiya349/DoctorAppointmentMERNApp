@@ -48,14 +48,14 @@ function Dashboard() {
             {dashData&&dashData.latestAppointments.map((items,index)=>(
               <div key={index} className='flex justify-between items-center pt-5'>
                 <div className='flex gap-4 items-center'>
-                  <img className='h-10 rounded-full' src={items.docData.image}/>
+                  <img className='h-10 rounded-full max-md:hidden' src={items.docData.image}/>
                   <div className='flex flex-col'>
-                    <p className='max-md:font-medium max-md:text-sm font-semibold'>{items.docData.name}</p>
-                    <p className='text-sm text-textColor text-sm'><span className='max-sm:hidden'>Appointment on </span>{slotDateFormat(items.slotDate)}</p>
+                    <p className='max-md:font-medium max-md:text-sm font-semibold max-md:ml-5'>{items.docData.name}</p>
+                    <p className='text-sm text-textColor text-sm max-md:ml-5'><span className='max-sm:hidden'>Appointment on </span>{slotDateFormat(items.slotDate)}</p>
                   </div>
                 </div>
                 {items.cancelled?
-                  <div className='w-14 text-[12px] items-center text-red-700 mr-2 text-right'>Cancelled</div> : items.isCompleted?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Completed</div> : items.payment?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Paid</div>:<button className='w-14 flex justify-center items-center mr-2'><img className='w-9' onClick={()=>cancelAppointment(items._id)} src={assets.cancel_icon} alt="" /></button>
+                  <div className='w-14 text-[12px] items-center text-red-700 mr-2 text-right'>Cancelled</div> : items.isCompleted?<div className='w-14 text-[12px] items-center text-green-700 mr-2 text-right'>Completed</div> : <button className='w-14 flex justify-center items-center mr-2'><img className='w-9' onClick={()=>cancelAppointment(items._id)} src={assets.cancel_icon} alt="" /></button>
               }
               </div>
             ))}

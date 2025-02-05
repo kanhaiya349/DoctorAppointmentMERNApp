@@ -18,7 +18,7 @@ function Navbar() {
     }
 
   return (
-    <div className="w-full h-auto bg-white">
+    <div className="w-full h-auto bg-white fixed top-0 left-0">
         <div className="my-4 flex justify-between items-center px-6 md:px-8 lg:px-10">
         <div className="flex gap-2 items-center">
             <img onClick={()=>navigate("/")} className="max-md:w-28 w-40 cursor-pointer" src={assets.admin_logo} alt="" />
