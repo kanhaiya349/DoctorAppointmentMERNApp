@@ -43,23 +43,23 @@ function Doctors() {
         >
           <p
             onClick={() =>
-              speciality === "General physician"
+              speciality === "General Physician"
                 ? navigate("/doctors")
-                : navigate("/doctors/General physician")
+                : navigate("/doctors/General%20Physician")
             }
             className={`border border-gray-300 rounded-sm w-48 px-3 py-1 text-sm cursor-pointer relative overflow-hidden group mb-5 ${
-              speciality === "General physician"
+              speciality === "General Physician"
                 ? "bg-primary text-white"
                 : "bg-white"
             }`}
           >
-            {speciality !== "General physician" ? (
+            {speciality !== "General Physician" ? (
               <span className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-center group-hover:bg-primary transition-all duration-500 ease-in-out"></span>
             ) : (
               ""
             )}
             <span className="relative z-10 group-hover:text-white  transition-all duration-500 ease-in-out">
-              General physician
+              General Physician
             </span>
           </p>
           <p

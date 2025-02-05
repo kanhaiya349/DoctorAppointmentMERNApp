@@ -105,10 +105,10 @@ function AddDoctor() {
               onChange={(e)=>setSpeciality(e.target.value)}
               value={speciality}
             >
-              <option value="General physician">General Physician</option>
+              <option value="General Physician">General Physician</option>
               <option value="Gynecologist">Gynecologist</option>
               <option value="Dermatologist">Dermatologist</option>
-              <option value="Pediatricians">Pediatricians</option>
+              <option value="pediatricians">Pediatricians</option>
               <option value="Neurologist">Neurologist</option>
               <option value="Gastroenterologist">Gastroenterologist</option>
             </select>
