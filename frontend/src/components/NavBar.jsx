@@ -40,7 +40,7 @@ function NavBar() {
           <li className="hover:font-bold">Contact</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
-        <a href="http://localhost:5174/admin" target="_blank" rel="noopener noreferrer">
+        <a href="https://doctorappointmentmernapp-admin.onrender.com/" target="_blank" rel="noopener noreferrer">
           <li className="border px-4 py-1 rounded-full text-[12px] hover:scale-110 transition-all ease-in-out duration-500">
             Admin Panel
           </li>
@@ -153,7 +153,7 @@ function NavBar() {
                   <li>Contact</li>
                 </NavLink>
                 <a
-                  href="http://localhost:5174/admin" target="_blank" rel="noopener noreferrer"
+                  href="https://doctorappointmentmernapp-admin.onrender.com/" target="_blank" rel="noopener noreferrer"
                   className={
                     ({ isActive }) =>
                       isActive

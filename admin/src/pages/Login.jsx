@@ -48,11 +48,11 @@ function Login() {
             <h5 className="text-2xl font-semibold text-textColor mb-5 text-center"><span className="text-primary">{state}</span> Login</h5>
             <div className="flex flex-col">
                 <p className="text-sm text-textColor mb-1">Email</p>
-                <input onChange={(e)=>setEmail(e.target.value)} placeholder={state==="Admin"?"admin@prescripto.com":""} type="email" value={email} className="border border-gray-300 mb-2 rounded-md h-9 pl-1" />
+                <input onChange={(e)=>setEmail(e.target.value)} placeholder={state==="Admin"?"admin@prescripto.com":"docfirstname@prescripto.com"} type="email" value={email} className="border border-gray-300 mb-2 rounded-md h-9 pl-1" />
             </div>
             <div className="flex flex-col">
                 <p className="text-sm text-textColor mb-1">Password</p>
-                <input onChange={(e)=>setPassword(e.target.value)} type="password" value={password} placeholder={state==="Admin"?"qwerty@123":""} className="border border-gray-300 mb-2 rounded-md h-9 pl-1" />
+                <input onChange={(e)=>setPassword(e.target.value)} type="password" value={password} placeholder={state==="Admin"?"qwerty@123":"qwerty@123"} className="border border-gray-300 mb-2 rounded-md h-9 pl-1" />
             </div>
             <button className="bg-primary w-full my-4 py-2 rounded-md text-white">Login</button>
             <div className="mt-2 text-sm text-textColor">
